@@ -24,7 +24,7 @@ body {
 
 h1 {
     font-family: "Courgette", cursive;
-    font-size: 1.4rem;
+    font-size: 40px;
     text-align: center;
     background-color: white;
     color: #ef73cc;
@@ -113,4 +113,15 @@ h2 {
     border-radius: 12px;
     padding: 10px 20px;
     box-shadow: 0 4px 10px rgb(136, 209, 255); 
+}
+.anni{
+    font-family: "Courgette", cursive;
+    font-size: 64px;
+    text-align: center;
+    background-color: white;
+    color: #ef73cc;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgb(136, 209, 255); 
+    width: fit-content;
 }
