@@ -129,7 +129,7 @@ h2 {
     display: flex;
     align-items:center;      /* allinea verticalmente al centro */
     justify-content: center;  /* centra l'intera riga nella pagina */
-    gap: 15px;                /* spazio tra numero e immagine */
+    gap: 12px;                /* spazio tra numero e immagine */
     width: 100%;
     flex-wrap: wrap;          /* se lo schermo è stretto, va a capo */
 }
