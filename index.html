@@ -17,13 +17,13 @@
         <h1>sei invitato/a alla festa di compleanno di Marta!</h1>
         <h1 class="anni">12</h1>
         <p class="introduzione">
-            ciao, sei invitato/a alla mia festa di compleanno in cui compio 12 anni! Ci divertiremo un mondo insieme tra torta, regali e risate. Manchi solo tu!
+            ciao, sei invitato/a alla mia festa di compleanno in cui compio 12 anni! Ci divertiremo un mondo insieme tra torta, regali e risate. Manchi solo tu! 
         </p>
         
         <section class="info-container">
             <article class="info-card">
                 <p class="info-label">Quando?</p>
-                <p class="info-value">la festa sarà <em>domenica 9 Agosto alle 18:00</em></p><!--orario e data da confermare-->
+                <p class="info-value">la festa sarà <em>Lunedì 10 Agosto alle 20:30</em></p><!--orario e data da confermare-->
             </article>
 
             <article class="info-card">
@@ -45,5 +45,20 @@
 
         <h2>Vi aspetto!</h2>
     </div>
+    <audio id="musica-sfondo" loop>
+    <source src="APT.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    // Prova a far partire l'audio in automatico
+    const audio = document.getElementById('musica-sfondo');
+    audio.volume = 0.3;
+    
+    // Se l'autoplay automatico viene bloccato dal browser,
+    // l'audio partirà al primo tocco o clic dell'utente sulla pagina
+    document.addEventListener('click', function() {
+        audio.play();
+    }, { once: true }); // { once: true } fa eseguire il clic una sola volta
+</script>
 </body>
 </html>
