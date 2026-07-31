@@ -125,3 +125,16 @@ h2 {
     box-shadow: 0 4px 10px rgb(136, 209, 255); 
     width: fit-content;
 }
+.anni-row {
+    display: flex;
+    align-items:center;      /* allinea verticalmente al centro */
+    justify-content: center;  /* centra l'intera riga nella pagina */
+    gap: 15px;                /* spazio tra numero e immagine */
+    width: 100%;
+    flex-wrap: wrap;          /* se lo schermo è stretto, va a capo */
+}
+.capibara{
+    justify-content: right;
+    display:flex;
+
+}
