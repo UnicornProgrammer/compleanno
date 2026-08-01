@@ -114,27 +114,30 @@ h2 {
     padding: 10px 20px;
     box-shadow: 0 4px 10px rgb(136, 209, 255); 
 }
-.anni{
+.anni-row {
+    position: relative;        /* Serve da riferimento per posizionare il capibara */
+    display: flex;
+    justify-content: center;   /* Centra perfettamente il numero 12 al mezzo */
+    align-items: center;
+    width: 100%;
+}
+
+.anni {
     font-family: "Courgette", cursive;
     font-size: 64px;
     text-align: center;
     background-color: white;
     color: #ef73cc;
     border-radius: 12px;
-    padding: 10px;
+    padding: 10px 20px;
     box-shadow: 0 4px 10px rgb(136, 209, 255); 
     width: fit-content;
 }
-.anni-row {
-    display: flex;
-    align-items:center;      /* allinea verticalmente al centro */
-    justify-content: center;  /* centra l'intera riga nella pagina */
-    gap: 12px;                /* spazio tra numero e immagine */
-    width: 100%;
-    flex-wrap: wrap;          /* se lo schermo è stretto, va a capo */
-}
-.capibara{
-    justify-content: right;
-    display:flex;
 
+.capibara {
+    position: absolute;        /* Fa uscire il capibara dal flusso per non spostare il 12 */
+    left: calc(50% + 55px);    /* Si posiziona subito a destra del numero centrato */
+    width: 110px;
+    height: auto;
+    max-width: 25vw;           /* Si adatta automaticamente sui telefoni piccoli */
 }
